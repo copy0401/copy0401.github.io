@@ -2,19 +2,20 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://copy0401.github.io
+title: 快樂小碼農
+subtitle: "{happy coder}"
+author: copy0401
 simple_search: https://www.google.com/search
-description:
+description: 隨手記錄一些容易遺忘的東西...
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
 # http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
 # Additionally, %o will give you the ordinal representation of the day
-date_format: "ordinal"
+date_format: "%Y 年 %-m 月 %-d 日"
 
+category_title_prefix: "分類：" # 修改分类前缀
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /atom.xml
 subscribe_email:
@@ -44,7 +45,7 @@ highlighter: pygments # default python pygments have been replaced by pygments.r
 paginate: 10          # Posts per page on the blog index
 paginate_path: "posts/:num"  # Directory base for pagination URLs eg. /posts/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
-excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+excerpt_link: "閱讀全文"  # "Continue reading" link text at the bottom of excerpted articles
 excerpt_separator: "<!--more-->"
 
 titlecase: true       # Converts page and post titles to titlecase
@@ -64,13 +65,13 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:
+github_user: copy0401
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: copy0401
 twitter_tweet_button: true
 
 # Google +1
@@ -91,11 +92,44 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+disqus_short_name: copy0401
+disqus_show_comment_count: true
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: G-Y4WHXBF17L
 
 # Facebook Like
 facebook_like: false
+
+#prose.io settings
+prose:
+  rooturl: "source/_posts"
+  media: "images"
+  metadata:
+    "source/_posts": |
+      - name: "layout"
+        field:
+          element: "text"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          value: "Title"
+      - name: "date"
+        field:
+          element: "text"
+          value: CURRENT_DATETIME
+      - name: "comments"
+        field:
+          label: "Allow comments"
+          element: "checkbox"
+          value: true
+      - name: "categories"
+        field:
+          element: "text"
+          value: "misc"
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: true
