@@ -7,6 +7,7 @@ categories: pages gist markdown
 ---
 
 ## [Github Pages](https://copy0401.github.io) 
+## [Github Pages Source Code](https://github.com/copy0401/copy0401.github.io)
 ## [Github Gist](https://gist.github.com/copy0401) 
 
 ---
