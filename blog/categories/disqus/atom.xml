@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[分類：disqus | 快樂小碼農]]></title>
+  <link href="http://copy0401.github.io/blog/categories/disqus/atom.xml" rel="self"/>
+  <link href="http://copy0401.github.io/"/>
+  <updated>2021-03-11T01:26:51+08:00</updated>
+  <id>http://copy0401.github.io/</id>
+  <author>
+    <name><![CDATA[copy0401]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Set Octopress]]></title>
+    <link href="http://copy0401.github.io/blog/2016/09/06/set-octopress-disqus/"/>
+    <updated>2016-09-06T01:56:05+08:00</updated>
+    <id>http://copy0401.github.io/blog/2016/09/06/set-octopress-disqus</id>
+    <content type="html"><![CDATA[<p>Disqus 申請帳號</p>
+
+<p>登入Disqus帳號</p>
+
+<p>點選 右上頭像 > 點選 Settings</p>
+
+<p>點選 右上頭像 > 點選 Add Disqus To Site</p>
+
+<p>點選 Start Using Engage</p>
+
+<p>Site name 輸入留言板的名字</p>
+
+<p>如: <code>copy0401</code></p>
+
+<p>Choose your unique Disqus URL 輸入留言版的網址</p>
+
+<p>如: <a href="http://disqus.com/by/copy0401">http://disqus.com/by/copy0401</a></p>
+
+<p>Category 選擇類別</p>
+
+<p>如: Tech</p>
+
+<pre><code>cd ~/octopress
+vim _config.yml
+disqus_short_name: copy0401
+disqus_show_comment_count: true
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

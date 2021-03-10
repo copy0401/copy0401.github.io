@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[分類：pages | 快樂小碼農]]></title>
+  <link href="http://copy0401.github.io/blog/categories/pages/atom.xml" rel="self"/>
+  <link href="http://copy0401.github.io/"/>
+  <updated>2021-03-11T01:26:51+08:00</updated>
+  <id>http://copy0401.github.io/</id>
+  <author>
+    <name><![CDATA[copy0401]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello World]]></title>
+    <link href="http://copy0401.github.io/blog/2016/09/10/hello-world/"/>
+    <updated>2016-09-10T01:56:05+08:00</updated>
+    <id>http://copy0401.github.io/blog/2016/09/10/hello-world</id>
+    <content type="html"><![CDATA[<h2><a href="https://copy0401.github.io">Github Pages</a></h2>
+
+<h2><a href="https://github.com/copy0401/copy0401.github.io">Github Pages Source Code</a></h2>
+
+<h2><a href="https://gist.github.com/copy0401">Github Gist</a></h2>
+
+<hr />
+]]></content>
+  </entry>
+  
+</feed>

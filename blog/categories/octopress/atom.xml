@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[分類：octopress | 快樂小碼農]]></title>
+  <link href="http://copy0401.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://copy0401.github.io/"/>
+  <updated>2021-03-11T01:26:51+08:00</updated>
+  <id>http://copy0401.github.io/</id>
+  <author>
+    <name><![CDATA[copy0401]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Set Octopress]]></title>
+    <link href="http://copy0401.github.io/blog/2016/09/06/set-octopress-disqus/"/>
+    <updated>2016-09-06T01:56:05+08:00</updated>
+    <id>http://copy0401.github.io/blog/2016/09/06/set-octopress-disqus</id>
+    <content type="html"><![CDATA[<p>Disqus 申請帳號</p>
+
+<p>登入Disqus帳號</p>
+
+<p>點選 右上頭像 > 點選 Settings</p>
+
+<p>點選 右上頭像 > 點選 Add Disqus To Site</p>
+
+<p>點選 Start Using Engage</p>
+
+<p>Site name 輸入留言板的名字</p>
+
+<p>如: <code>copy0401</code></p>
+
+<p>Choose your unique Disqus URL 輸入留言版的網址</p>
+
+<p>如: <a href="http://disqus.com/by/copy0401">http://disqus.com/by/copy0401</a></p>
+
+<p>Category 選擇類別</p>
+
+<p>如: Tech</p>
+
+<pre><code>cd ~/octopress
+vim _config.yml
+disqus_short_name: copy0401
+disqus_show_comment_count: true
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Set Octopress Theme]]></title>
+    <link href="http://copy0401.github.io/blog/2016/09/05/set-octopress-theme/"/>
+    <updated>2016-09-05T01:56:05+08:00</updated>
+    <id>http://copy0401.github.io/blog/2016/09/05/set-octopress-theme</id>
+    <content type="html"><![CDATA[<pre><code>cd ~/octopress
+git clone git://github.com/lucaslew/whitespace.git .themes/whitespace
+rake install['whitespace'] # for zsh, use: rake install\['whitespace'\]
+rake generate
+rake preview
+</code></pre>
+
+<pre><code>rake setup_github_pages
+</code></pre>
+
+<p>git@github.com:[your_username]/[your_username].github.io.git</p>
+
+<p>例如輸入</p>
+
+<pre><code>git@github.com:copy0401/copy0401.github.io
+</code></pre>
+
+<pre><code>rake generate
+rake deploy
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Install Octopress]]></title>
+    <link href="http://copy0401.github.io/blog/2016/09/04/install_octopress/"/>
+    <updated>2016-09-04T01:56:05+08:00</updated>
+    <id>http://copy0401.github.io/blog/2016/09/04/install_octopress</id>
+    <content type="html"><![CDATA[<pre><code>cd ~/
+git clone git://github.com/imathis/octopress.git octopress
+cd octopress
+gem install bundler
+bundle install
+rake install
+rake preview
+</code></pre>
+
+<p><a href="http://localhost:4000/">http://localhost:4000/</a></p>
+
+<pre><code>rake setup_github_pages
+</code></pre>
+
+<p>git@github.com:[your_username]/[your_username].github.io.git</p>
+
+<p>例如輸入</p>
+
+<pre><code>git@github.com:copy0401/copy0401.github.io
+</code></pre>
+
+<pre><code>rake generate
+rake preview
+rake deploy
+</code></pre>
+
+<hr />
+
+<p>新的頁面</p>
+
+<pre><code>rake new_page["title"] # for zsh, use: rake new_page\["title"\]
+</code></pre>
+
+<p>or</p>
+
+<pre><code>rake new_page[about/index.html] # for zsh, use: rake new_page\[about/index.html\]
+</code></pre>
+
+<p>再去 <code>source/_includes/custom/navigation.html</code> 新增連結</p>
+
+<p>```</p>
+
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/categories/octopress/">Octopress</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+
+<pre><code>
+---
+
+撰寫文章
+</code></pre>
+
+<p>rake new_post[&ldquo;title&rdquo;]
+```</p>
+
+<p>產生新的檔案 <code>YYYY-MM-DD-title.markdown</code> 到 <code>source/_posts/</code></p>
+
+<p>如果 <code>.markdown</code> 要改成 <code>.md</code> 可以到修改 <code>Rakefile</code></p>
+
+<pre><code>new_post_ext    = "md"
+new_page_ext    = "md"
+</code></pre>
+
+<hr />
+
+<p>Push to Github</p>
+
+<pre><code>git add .
+git commit -m "some commit"
+git push origin source
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>
